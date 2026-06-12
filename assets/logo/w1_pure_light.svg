@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="800" height="220" role="img" aria-labelledby="t d">
+  <title id="t">RE:able — W1 Pure Wordmark (Light)</title>
+  <desc id="d">Inter Black 900 150px, letter-spacing -4%, Olive #4D5A3A + Olive Light #8FA66E 콜론. 콜론 두 점 안에 잎맥 V 패턴(중심맥+사선 측맥 2).</desc>
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&amp;display=block');
+      .reable { font-family: 'Inter', 'Pretendard Variable', sans-serif; font-weight: 900; font-size: 150px; letter-spacing: -6px; fill: #4D5A3A; }
+      .colon  { fill: #8FA66E; }
+      .vein   { stroke: #3F5328; stroke-width: 1.1; opacity: 0.15; stroke-linecap: round; fill: none; }
+    </style>
+  </defs>
+
+  <text x="400" y="163" text-anchor="middle" class="reable">RE<tspan class="colon">:</tspan>able</text>
+
+  <g class="vein">
+    <line x1="343.96" y1="87.9"  x2="343.96" y2="111.1"/>
+    <line x1="343.96" y1="102.12" x2="335.49" y2="95.06"/>
+    <line x1="343.96" y1="102.12" x2="352.43" y2="95.06"/>
+
+    <line x1="343.96" y1="137.9" x2="343.96" y2="161.1"/>
+    <line x1="343.96" y1="152.26" x2="335.49" y2="145.20"/>
+    <line x1="343.96" y1="152.26" x2="352.43" y2="145.20"/>
+  </g>
+</svg>

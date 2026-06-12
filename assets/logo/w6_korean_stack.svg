@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" aria-labelledby="t d">
+  <title id="t">RE:able — W6 Korean Stack</title>
+  <desc id="d">한글(리에이블) + 영문(RE:able 150px) + 태그라인(다시:가능하게) 3단 스택. 콜론에 잎맥 V 0.15.</desc>
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&amp;display=block');
+      @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css');
+      .ko-top { font-family: 'Pretendard Variable', sans-serif; font-weight: 700; font-size: 60px; fill: #BFC9AE; letter-spacing: 0.04em; }
+      .reable { font-family: 'Inter', 'Pretendard Variable', sans-serif; font-weight: 900; font-size: 150px; letter-spacing: -6px; fill: #1B1F18; }
+      .colon  { fill: #8FA66E; }
+      .ko-tag { font-family: 'Pretendard Variable', sans-serif; font-weight: 500; font-size: 38px; fill: #8FA66E; letter-spacing: 0.18em; }
+      .vein   { stroke: #3F5328; stroke-width: 1.1; opacity: 0.15; stroke-linecap: round; fill: none; }
+    </style>
+  </defs>
+
+  <text x="400" y="80" text-anchor="middle" class="ko-top">리에이블</text>
+
+  <text x="400" y="240" text-anchor="middle" class="reable">RE<tspan class="colon">:</tspan>able</text>
+
+  <g class="vein">
+    <line x1="343.96" y1="164.87" x2="343.96" y2="188.07"/>
+    <line x1="343.96" y1="179.12" x2="335.49" y2="172.06"/>
+    <line x1="343.96" y1="179.12" x2="352.43" y2="172.06"/>
+
+    <line x1="343.96" y1="215.01" x2="343.96" y2="238.21"/>
+    <line x1="343.96" y1="229.26" x2="335.49" y2="222.20"/>
+    <line x1="343.96" y1="229.26" x2="352.43" y2="222.20"/>
+  </g>
+
+  <text x="400" y="340" text-anchor="middle" class="ko-tag">다시 : 가능하게</text>
+</svg>
