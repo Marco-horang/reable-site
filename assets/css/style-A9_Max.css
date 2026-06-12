@@ -158,8 +158,8 @@ section { position: relative; }
   gap: 24px;
 }
 .brand { display: flex; align-items: center; height: 100%; }
-.brand img { height: 26px; width: auto; }
-.brand .brand-light { display: block; height: 26px; }
+.brand img { height: 38px; width: auto; }
+.brand .brand-light { display: block; height: 38px; }
 .brand .brand-dark { display: none; }
 /* 투명 헤더(다크 히어로 위)에서는 로고를 흰색으로 반전 */
 .site-header:not(.scrolled) .brand .brand-light { filter: brightness(0) invert(1) opacity(0.96); }
@@ -192,6 +192,8 @@ section { position: relative; }
   left: 50%;
   transform: translateX(-50%) translateY(8px);
   min-width: 240px;
+  width: max-content;
+  max-width: min(92vw, 540px);
   background: var(--white);
   border: 1px solid var(--rule);
   border-radius: var(--radius);
@@ -207,12 +209,13 @@ section { position: relative; }
 }
 .dropdown a {
   display: block;
+  white-space: nowrap;
   padding: 11px 14px;
   border-radius: var(--radius-sm);
   transition: background .18s;
 }
 .dropdown a:hover { background: var(--tint); }
-.dropdown .dd-title { font-weight: 700; color: var(--ink); font-size: 15px; }
+.dropdown .dd-title { font-weight: 700; color: var(--ink); font-size: 15px; margin-right: 8px; }
 .dropdown .dd-sub { font-size: 13px; color: var(--ink-mute); margin-top: 2px; }
 
 .header-cta {
@@ -529,12 +532,13 @@ body.menu-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
 @media (max-width: 880px) {
-  .nav, .header-cta { display: none; }
+  .header-cta { display: none; }
   .nav-toggle { display: flex; }
-  .site-header { background: rgba(250,250,246,0.92); backdrop-filter: blur(12px); border-bottom-color: var(--rule); }
+  .site-header { background: rgba(250,250,246,0.97); border-bottom-color: var(--rule); }
 
   /* 모바일 슬라이드 메뉴 */
   .nav {
+    display: flex; z-index: 999;
     position: fixed; inset: var(--header-h) 0 0 0;
     background: var(--paper);
     flex-direction: column; align-items: stretch; justify-content: flex-start;
@@ -548,9 +552,9 @@ body.menu-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
   .nav-item.has-menu:hover .dropdown,
   .dropdown {
     position: static; transform: none; opacity: 1; visibility: visible;
-    box-shadow: none; border: none; min-width: 0; padding: 0 0 12px 16px; background: transparent;
+    box-shadow: none; border: none; min-width: 0; width: auto; max-width: none; padding: 0 0 12px 16px; background: transparent;
   }
-  .dropdown a { padding: 12px 8px; }
+  .dropdown a { padding: 12px 8px; white-space: normal; }
   .nav .header-cta { display: inline-flex; margin-top: 22px; justify-content: center; }
 }
 @media (max-width: 720px) {
