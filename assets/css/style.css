@@ -575,4 +575,12 @@ body.menu-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
 @media (max-width: 480px) {
   .grid-4, .process, .stat-strip { grid-template-columns: 1fr; }
   body { font-size: 16px; }
+  /* 모바일 폴리시 (2026-06-17 모바일 QA) — 좁은 화면 밀도·터치타깃·CTA 보정 */
+  .stat-cell { padding: 26px 18px; }
+  .stat-cell .label { font-size: 13.5px; }
+  .process-step { padding: 22px 20px; }
+  .cta-band { padding: 34px 22px; }
+  .cta-actions { width: 100%; }
+  .cta-actions .btn { width: 100%; justify-content: center; }
+  .footer-social a { width: 44px; height: 44px; }
 }
