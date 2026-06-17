@@ -574,6 +574,8 @@ body.menu-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
   .split.reverse .split-media { order: 0; }
   .footer-top { grid-template-columns: 1fr; }
   .hero-stats { gap: 22px 36px; }
+  /* [2026-06-17] 모바일 히어로: 통계가 다음 섹션에 너무 붙던 문제 → 상·하 여백 확보 */
+  .hero { padding-top: calc(var(--header-h) + 40px); padding-bottom: 56px; }
 }
 @media (max-width: 480px) {
   .grid-4, .process, .stat-strip { grid-template-columns: 1fr; }
