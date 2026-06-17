@@ -543,6 +543,9 @@ body.menu-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
   .site-header { background: rgba(250,250,246,0.97); border-bottom-color: var(--rule); }
   /* 모바일 헤더는 처음부터 밝은 배경 → 초기 상태에서도 로고 흰색 반전 해제(가독성) */
   .site-header:not(.scrolled) .brand .brand-light { filter: none; }
+  /* [버그수정 2026-06-17] 스크롤 시 헤더의 backdrop-filter(blur)가 position:fixed 모바일 메뉴의
+     컨테이닝 블록이 되어 메뉴가 헤더(76px)에 갇히는 문제 → 메뉴 열림 동안 블러 해제 + 솔리드 배경 */
+  body.menu-open .site-header { background: var(--paper); -webkit-backdrop-filter: none; backdrop-filter: none; }
 
   /* 모바일 슬라이드 메뉴 */
   .nav {
