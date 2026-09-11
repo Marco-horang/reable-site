@@ -1,13 +1,13 @@
 /* RE:able DESIGN.md tokens. Company introduction only; no global overrides. */
 body[data-page="about"] .about-network{--net-primary:#3F5328;--net-accent:#596D3B;--net-surface:#F5F7EF;--net-alt:#ECEFE3;--net-line:#DCE2D1;--net-muted:#6B7363;margin-top:48px}
 body[data-page="about"] .about-network__visuals{display:grid;grid-template-columns:3fr 2fr;align-items:stretch;background:#FFF;border:1px solid var(--net-line);border-radius:16px;overflow:hidden}
-body[data-page="about"] .about-network__map{margin:0;min-width:0;background:var(--net-surface);padding:24px 24px 20px}
+body[data-page="about"] .about-network__map{display:flex;flex-direction:column;margin:0;min-width:0;background:var(--net-surface);padding:36px 24px}
 body[data-page="about"] .about-network__map-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:14px;font-weight:700;color:var(--net-primary)}
 body[data-page="about"] .about-network__legend{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:500;color:var(--net-accent)}
 body[data-page="about"] .about-network__legend i{width:8px;height:8px;border-radius:50%;background:var(--net-accent)}
-body[data-page="about"] .about-network__map picture{display:block;margin-top:12px}
+body[data-page="about"] .about-network__map picture{display:block;flex:none;margin-top:auto;padding-top:20px}
 body[data-page="about"] .about-network__map picture>img{width:100%;height:auto;display:block}
-body[data-page="about"] .about-network__map figcaption{font-size:12px;line-height:1.6;color:var(--net-muted);max-width:460px}
+body[data-page="about"] .about-network__map figcaption{margin-top:16px;font-size:12px;line-height:1.6;color:var(--net-muted);max-width:460px}
 body[data-page="about"] .about-network__overview{padding:36px 28px;display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--net-line)}
 body[data-page="about"] .about-network__label{font-size:13px;font-weight:600;color:var(--net-accent);margin:0 0 16px}
 body[data-page="about"] .about-network__overview h3{font-size:26px;line-height:1.3;letter-spacing:-.01em;color:var(--net-primary);margin:0}
@@ -23,8 +23,10 @@ body[data-page="about"] .about-network__locations li:first-child{padding-left:0;
 body[data-page="about"] .about-network__locations li:last-child{padding-right:0}
 body[data-page="about"] .about-network__locations h3{font-size:18px;line-height:1.4;color:var(--net-primary);margin:0 0 10px}
 body[data-page="about"] .about-network__locations p{font-size:14px;line-height:1.75;color:var(--net-muted);margin:0;word-break:keep-all;overflow-wrap:break-word}
-body[data-page="about"] .about-network__source{font-size:12px;line-height:1.6;color:var(--net-muted);margin-top:24px}
-body[data-page="about"] .about-network__source a{text-decoration:underline;text-underline-offset:3px}
-body[data-page="about"] .about-network__sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
-@media(max-width:880px){body[data-page="about"] .about-network__visuals{grid-template-columns:1fr}body[data-page="about"] .about-network__map{padding:24px}body[data-page="about"] .about-network__map>img{max-width:600px;margin-inline:auto}body[data-page="about"] .about-network__overview{border-left:0;border-top:1px solid var(--net-line);padding:28px}body[data-page="about"] .about-network__infographic{max-width:440px}body[data-page="about"] .about-network__locations{grid-template-columns:1fr 1fr;gap:24px 0}body[data-page="about"] .about-network__locations li:nth-child(3){padding-left:0;border-left:0}}
+body[data-page="about"] .about-certifications{display:flex;flex-wrap:nowrap;gap:10px}
+body[data-page="about"] .about-certifications .logo-chip{flex:1 1 0;min-width:0;justify-content:center;gap:6px;padding:14px 8px;font-size:14px;white-space:nowrap}
+body[data-page="about"] .about-certifications .logo-chip .ic{flex-shrink:0;width:7px;height:7px}
+@media(max-width:1100px){body[data-page="about"] .about-certifications{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:600px){body[data-page="about"] .about-certifications{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}body[data-page="about"] .about-certifications .logo-chip{font-size:13px;padding:12px 8px}body[data-page="about"] .about-certifications .logo-chip:last-child{grid-column:1/-1}}
+@media(max-width:880px){body[data-page="about"] .about-network__visuals{grid-template-columns:1fr}body[data-page="about"] .about-network__map{display:block;padding:24px}body[data-page="about"] .about-network__map picture{max-width:600px;margin:12px auto 0;padding-top:0}body[data-page="about"] .about-network__map figcaption{margin-top:12px}body[data-page="about"] .about-network__overview{border-left:0;border-top:1px solid var(--net-line);padding:28px}body[data-page="about"] .about-network__infographic{max-width:440px}body[data-page="about"] .about-network__locations{grid-template-columns:1fr 1fr;gap:24px 0}body[data-page="about"] .about-network__locations li:nth-child(3){padding-left:0;border-left:0}}
 @media(max-width:480px){body[data-page="about"] .about-network{margin-top:32px}body[data-page="about"] .about-network__map{padding:18px 12px}body[data-page="about"] .about-network__map-heading{padding-inline:6px;font-size:13px}body[data-page="about"] .about-network__map figcaption{padding-inline:6px;font-size:12px}body[data-page="about"] .about-network__overview{padding:24px 20px}body[data-page="about"] .about-network__overview h3{font-size:24px}body[data-page="about"] .about-network__locations{gap:24px 0}body[data-page="about"] .about-network__locations li{padding-inline:14px}body[data-page="about"] .about-network__locations h3{font-size:16px}body[data-page="about"] .about-network__locations p{font-size:13px}}
